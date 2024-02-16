@@ -1,4 +1,4 @@
-/* 
+/* color
 #52057B
 #892CDC
 #32E0C4 
@@ -14,21 +14,8 @@ body {
 a {
   color: #eeeeee;
 }
-.sidebar,
-.user-card {
-  width: 25%;
-  height: fit-content;
-}
-.posts-card {
-  width: 50%;
-}
-.sidebar {
-  padding: 20px;
-  box-sizing: border-box;
-}
-.sidebar-logo {
-  width: 25px;
-}
+
+/* auth */
 .bg-auth {
   background-image: linear-gradient(to bottom, #52057b, #151515);
 }
@@ -44,6 +31,29 @@ a {
 .my-form-control {
   outline: none;
 }
+
+/* aside */
+.sidebar,
+.user-card {
+  width: 25%;
+  height: fit-content;
+}
+.posts-card {
+  width: 50%;
+}
+.sidebar {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.sidebar-logo {
+  width: 25px;
+}
+.profile-picture-aside {
+  width: 100px;
+  object-fit: cover;
+}
+
+/* button */
 .my-btn {
   border: none;
   background-image: linear-gradient(to left, #52057b, #32e0c4);
@@ -55,6 +65,8 @@ a {
 .my-btn:active {
   background-image: linear-gradient(to left, #52057b, #52057b);
 }
+
+/* text */
 .text-link {
   color: #52057b;
 }
