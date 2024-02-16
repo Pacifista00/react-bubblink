@@ -1,6 +1,7 @@
 /* color
 #52057B
 #892CDC
+#6c22a6
 #32E0C4 
 */
 
@@ -52,21 +53,72 @@ a {
   width: 100px;
   object-fit: cover;
 }
+.active {
+  background-color: #aaaaaa;
+  border-radius: 10px;
+}
+
+/* main */
+.search-bar {
+  background-color: #151515;
+}
+.profile-picture-post {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+.post-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.my-dropdown:hover {
+  color: #eeeeee;
+  background-color: #32e0c4;
+}
 
 /* button */
+.btn {
+  border: 0;
+}
 .my-btn {
   border: none;
-  background-image: linear-gradient(to left, #52057b, #32e0c4);
+  background-color: #32e0c4;
+  width: 100%;
+  transition: 0.3s;
+}
+.my-btn2 {
+  border: none;
+  background-color: #eeeeee;
+  color: #892cdc;
+  box-sizing: border-box;
+}
+.my-btn-comment {
+  background-color: #892cdc;
   width: 100%;
 }
-.my-btn:hover {
-  background-image: linear-gradient(to left, #892cdc, #892cdc);
-}
+.my-btn:hover,
 .my-btn:active {
-  background-image: linear-gradient(to left, #52057b, #52057b);
+  background-color: #45ffca !important;
+}
+.my-btn2:hover,
+.my-btn2:active {
+  background-color: #eeeeee !important;
+  color: #52057b !important;
+}
+.my-btn-comment:hover,
+.my-btn-comment:active {
+  background-color: #6c22a6 !important;
 }
 
 /* text */
 .text-link {
   color: #52057b;
+}
+.text-verified {
+  color: #0079ff;
+}
+
+.dropdown-toggle::before {
+  display: none !important;
 }
