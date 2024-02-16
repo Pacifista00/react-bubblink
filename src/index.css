@@ -8,9 +8,29 @@
 
 body {
   font-family: "Maven Pro", sans-serif;
+  background-color: #151515;
+  color: #eeeeee;
+}
+a {
+  color: #eeeeee;
+}
+.sidebar,
+.user-card {
+  width: 25%;
+  height: fit-content;
+}
+.posts-card {
+  width: 50%;
+}
+.sidebar {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.sidebar-logo {
+  width: 25px;
 }
 .bg-auth {
-  background-image: linear-gradient(to left, #52057b, #03001c);
+  background-image: linear-gradient(to bottom, #52057b, #151515);
 }
 .card-auth {
   width: 310px;

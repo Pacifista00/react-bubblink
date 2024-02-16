@@ -7,9 +7,6 @@ function Register() {
       <div className="bg-auth d-flex align-items-center min-vh-100">
         <div className="card card-auth mx-auto rounded-0 p-3">
           <div className="card-body">
-            <div className="logo text-center mb-3">
-              <img className="logo-img" src={Logo} alt="" />
-            </div>
             <h3 className="text-center">Register</h3>
             <form>
               <div className="mt-3">
