@@ -33,6 +33,11 @@ a {
   outline: none;
 }
 
+/* my modal */
+.my-modal {
+  border-top: 5px solid #6c22a6;
+}
+
 /* aside */
 .sidebar,
 .user-card {
@@ -63,8 +68,8 @@ a {
   background-color: #151515;
 }
 .profile-picture-post {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
 }
 .post-image {
@@ -72,9 +77,17 @@ a {
   height: 300px;
   object-fit: cover;
 }
+.detail-post-image {
+  width: 100%;
+  object-fit: cover;
+}
 .my-dropdown:hover {
   color: #eeeeee;
   background-color: #32e0c4;
+}
+.dropdown-toggle::before,
+.dropdown-toggle::after {
+  display: none !important;
 }
 
 /* button */
@@ -89,13 +102,17 @@ a {
 }
 .my-btn2 {
   border: none;
-  background-color: #eeeeee;
-  color: #892cdc;
+  background-color: #aaaaaa;
+  color: #eeeeee;
   box-sizing: border-box;
 }
 .my-btn-comment {
   background-color: #892cdc;
   width: 100%;
+}
+.my-btn-submit {
+  color: #eeeeee;
+  background-color: #892cdc;
 }
 .my-btn:hover,
 .my-btn:active {
@@ -104,10 +121,12 @@ a {
 .my-btn2:hover,
 .my-btn2:active {
   background-color: #eeeeee !important;
-  color: #52057b !important;
+  color: #151515 !important;
 }
 .my-btn-comment:hover,
-.my-btn-comment:active {
+.my-btn-comment:active,
+.my-btn-submit:hover,
+.my-btn-submit:active {
   background-color: #6c22a6 !important;
 }
 
@@ -117,8 +136,4 @@ a {
 }
 .text-verified {
   color: #0079ff;
-}
-
-.dropdown-toggle::before {
-  display: none !important;
 }

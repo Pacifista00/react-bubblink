@@ -6,15 +6,15 @@ function posts() {
     <main className="posts-card position-relative">
       <Search />
       <div className="card bg-dark text-light">
-        <div className="card-header my-0 py-0">
+        <div className="card-header">
           <div className="d-flex align-items-center">
             <img src={Logo} alt="" className="profile-picture-post" />
-            <div className="m-0 p-0">
-              <h3 className="ms-2 mb-0 mt-3 fs-6 card-title">
+            <div>
+              <h3 className="ps-2 m-0 fs-6">
                 Pacifista
                 <i className="ms-1 p-0 text-verified fa-solid fa-circle-check"></i>
               </h3>
-              <p className="ms-2 fs-6">22 Des 2023</p>
+              <p className="ps-2 m-0 fs-6">22 Des 2023</p>
             </div>
             <div className="ms-auto">
               <div className="btn-group dropstart">
@@ -51,7 +51,7 @@ function posts() {
             </div>
           </div>
         </div>
-        <div v-if="item.image">
+        <div>
           <img className="post-image image-fluid" src={Logo} alt="post-image" />
         </div>
         <div className="card-body pt-2">
@@ -65,7 +65,7 @@ function posts() {
                 type="button"
                 className="btn my-btn-comment rounded-pill mt-2 text-light"
                 data-bs-toggle="modal"
-                data-bs-target="#postdetail"
+                data-bs-target="#postDetailModal"
               >
                 <i className="fa-regular fa-comment me-3">
                   <span className="ms-1">0</span>

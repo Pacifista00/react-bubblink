@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo/logo.png";
+import AddPostModal from "./addPostModal";
 
 function sidebar() {
   return (
@@ -14,7 +15,7 @@ function sidebar() {
             className="text-decoration-none p-1 fs-6 d-block rounded my-1"
             to="/home"
           >
-            <i class="fa-solid fa-house me-2"></i>
+            <i className="fa-solid fa-house me-2"></i>
             HOME
           </Link>
         </li>
@@ -23,18 +24,20 @@ function sidebar() {
             v-if="user.id"
             className="text-decoration-none p-1 fs-6 d-block rounded my-1"
           >
-            <i class="fa-solid fa-user me-2"></i>
+            <i className="fa-solid fa-user me-2"></i>
             PROFILE
           </Link>
         </li>
         <li className="list-item px-2">
-          <Link
+          <div
+            type="button"
             className="text-decoration-none p-1 fs-6 d-block rounded my-1"
-            to="/create"
+            data-bs-toggle="modal"
+            data-bs-target="#addPostModal"
           >
-            <i class="fa-solid fa-plus me-2"></i>
+            <i className="fa-solid fa-plus me-2"></i>
             CREATE POST
-          </Link>
+          </div>
         </li>
       </ul>
     </aside>
