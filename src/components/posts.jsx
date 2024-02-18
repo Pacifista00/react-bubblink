@@ -36,13 +36,18 @@ function posts() {
                       type="button"
                       className="dropdown-item my-dropdown"
                       data-bs-toggle="modal"
-                      data-bs-target="#modalpost"
+                      data-bs-target="#editPostModal"
                     >
                       Edit
                     </div>
                   </li>
                   <li>
-                    <div type="button" className="dropdown-item my-dropdown">
+                    <div
+                      type="button"
+                      className="dropdown-item my-dropdown"
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                    >
                       Delete
                     </div>
                   </li>

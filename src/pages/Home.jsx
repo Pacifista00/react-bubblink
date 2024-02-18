@@ -3,6 +3,9 @@ import UserCard from "../components/userCard";
 import Posts from "../components/posts";
 import AddPostModal from "../components/addPostModal";
 import PostDetailModal from "../components/postDetailModal";
+import EditPostModal from "../components/editPostModal";
+import EditCommentModal from "../components/editCommentModal";
+import DeleteModal from "../components/deleteModal";
 
 function Home() {
   return (
@@ -14,6 +17,9 @@ function Home() {
 
         <AddPostModal />
         <PostDetailModal />
+        <EditPostModal />
+        <EditCommentModal />
+        <DeleteModal />
       </div>
     </>
   );

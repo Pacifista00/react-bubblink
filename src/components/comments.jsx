@@ -4,7 +4,7 @@ function comments() {
   return (
     <div className="comments border-top">
       <h2 className="ms-3 mt-3">Comments</h2>
-      <ul>
+      <ul className="px-4">
         <li className="list-group-item bg-dark pb-2">
           <div className="d-flex align-items-center m-0">
             <img src={Logo} alt="" className="profile-picture-post" />
@@ -18,7 +18,7 @@ function comments() {
             <div className="ms-auto">
               <div className="dropdown">
                 <button
-                  className="btn btn-link text-dark dropdown-toggle"
+                  className="btn btn-link text-light dropdown-toggle"
                   type="button"
                   id="optionsMenu"
                   data-bs-toggle="dropdown"
@@ -32,7 +32,7 @@ function comments() {
                       type="button"
                       className="dropdown-item my-dropdown"
                       data-bs-toggle="modal"
-                      data-bs-target="#postDetailModal"
+                      data-bs-target="#editCommentModal"
                     >
                       Edit
                     </div>
@@ -41,7 +41,8 @@ function comments() {
                     <div
                       type="button"
                       className="dropdown-item my-dropdown"
-                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
                     >
                       Delete
                     </div>

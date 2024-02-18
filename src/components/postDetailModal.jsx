@@ -33,6 +33,44 @@ function postDetailModal() {
                 </h3>
                 <p className="ps-2 m-0 fs-6 text-secondary">12 des 2003</p>
               </div>
+              <div className="ms-auto">
+                <div className="btn-group dropstart">
+                  <button
+                    className="btn btn-link text-dark dropdown-toggle"
+                    type="button"
+                    id="optionsMenu"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="true"
+                  >
+                    <i className="fas fa-ellipsis-v text-light"></i>
+                  </button>
+                  <ul
+                    className="dropdown-menu rounded-0"
+                    aria-labelledby="optionsMenu"
+                  >
+                    <li>
+                      <div
+                        type="button"
+                        className="dropdown-item my-dropdown"
+                        data-bs-toggle="modal"
+                        data-bs-target="#editPostModal"
+                      >
+                        Edit
+                      </div>
+                    </li>
+                    <li>
+                      <div
+                        type="button"
+                        className="dropdown-item my-dropdown"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                      >
+                        Delete
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div className="container">
               <div className="mb-3">
